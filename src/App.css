@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #75ff35;
+  font-family: 'Special Elite', monospace;
+  color: #292820;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 16px;
+}
+
+.receipt {
+  width: 100%;
+  max-width: 480px;
+  background: #fffdf3;
+  padding: 35px 30px;
+  box-shadow: 5px 8px 20px rgba(0,0,0,0.15);
+  position: relative;
+}
+
+.receipt-header h1 {
+    font-family: 'Special Elite', monospace;
+    font-size: 25px;
+    line-height: 1;
+    margin: 15px 0;
+    letter-spacing: 2px;
+    color: #292820;
+  }
+
+.small-text {
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.receipt-header h1 {
+  font-size: 32px;
+  line-height: 1.15;
+  margin: 15px 0;
+  letter-spacing: 2px;
+}
+
+.receipt-header p:last-child {
+  letter-spacing: 4px;
+  font-size: 13px;
+}
+
+.receipt-divider {
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 22px 0;
+  color: #777365;
+}
+
+.receipt-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  gap: 10px;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 25px 0;
+}
+
+.summary div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.summary span {
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.summary strong {
+  font-size: 36px;
+}
+
+.table-heading,
+.student-row {
+  display: grid;
+  grid-template-columns: 35px minmax(0, 1fr) 88px;
+  align-items: center;
+  gap: 7px;
+}
+
+.table-heading {
+  background: #292820;
+  color: #fffdf3;
+  padding: 12px 8px;
+  font-size: 11px;
+}
+
+.student-row {
+  padding: 17px 5px;
+  border-bottom: 1px dashed #aaa696;
+  font-size: 12px;
+}
+
+.name {
+  overflow-wrap: anywhere;
+}
+
+.status {
+  text-align: center;
+  padding: 7px 3px;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.present {
+  background: #d9e8c5;
+  color: #386b36;
+  border: 1px solid #71945b;
+}
+
+.absent {
+  background: #f0d8d3;
+  color: #a13e35;
+  border: 1px solid #bd766e;
+}
+
+.receipt-footer {
+  text-align: center;
+  line-height: 2;
+  font-size: 12px;
+}
+
+.heart {
+  color: #b65b50;
+  letter-spacing: 8px;
+}
+
+.barcode {
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin: 15px 0;
+}
+
+.receipt-footer small {
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 400px) {
+  .receipt {
+    padding: 25px 15px;
+  }
+
+  .receipt-header h1 {
+    font-size: 26px;
+  }
+
+  .student-row {
+    font-size: 10px;
+  }
+}
